@@ -6,6 +6,7 @@ namespace HR_Manager_Project
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(  "test");
             do
             {
                 Console.ResetColor();

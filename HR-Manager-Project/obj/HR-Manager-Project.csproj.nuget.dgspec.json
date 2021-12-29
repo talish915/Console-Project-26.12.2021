@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\HR-Manager-Project\\HR-Manager-Project.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\Console-Project-26.12.2021\\HR-Manager-Project\\HR-Manager-Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\HR-Manager-Project\\HR-Manager-Project.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\Console-Project-26.12.2021\\HR-Manager-Project\\HR-Manager-Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\HR-Manager-Project\\HR-Manager-Project.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Console-Project-26.12.2021\\HR-Manager-Project\\HR-Manager-Project.csproj",
         "projectName": "HR-Manager-Project",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\HR-Manager-Project\\HR-Manager-Project.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\Console-Project-26.12.2021\\HR-Manager-Project\\HR-Manager-Project.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\HR-Manager-Project\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\Console-Project-26.12.2021\\HR-Manager-Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
