@@ -1,0 +1,14 @@
+C:\Users\ASUS\Desktop\HR-Manager-Project\obj\Debug\netcoreapp3.1\HR-Manager-Project.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\HR-Manager-Project\obj\Debug\netcoreapp3.1\HR-Manager-Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\HR-Manager-Project\obj\Debug\netcoreapp3.1\HR-Manager-Project.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\HR-Manager-Project\obj\Debug\netcoreapp3.1\HR-Manager-Project.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\HR-Manager-Project\obj\Debug\netcoreapp3.1\HR-Manager-Project.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\HR-Manager-Project\bin\Debug\netcoreapp3.1\HR-Manager-Project.exe
+C:\Users\ASUS\Desktop\HR-Manager-Project\bin\Debug\netcoreapp3.1\HR-Manager-Project.deps.json
+C:\Users\ASUS\Desktop\HR-Manager-Project\bin\Debug\netcoreapp3.1\HR-Manager-Project.runtimeconfig.json
+C:\Users\ASUS\Desktop\HR-Manager-Project\bin\Debug\netcoreapp3.1\HR-Manager-Project.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\HR-Manager-Project\bin\Debug\netcoreapp3.1\HR-Manager-Project.dll
+C:\Users\ASUS\Desktop\HR-Manager-Project\bin\Debug\netcoreapp3.1\HR-Manager-Project.pdb
+C:\Users\ASUS\Desktop\HR-Manager-Project\obj\Debug\netcoreapp3.1\HR-Manager-Project.dll
+C:\Users\ASUS\Desktop\HR-Manager-Project\obj\Debug\netcoreapp3.1\HR-Manager-Project.pdb
+C:\Users\ASUS\Desktop\HR-Manager-Project\obj\Debug\netcoreapp3.1\HR-Manager-Project.genruntimeconfig.cache
