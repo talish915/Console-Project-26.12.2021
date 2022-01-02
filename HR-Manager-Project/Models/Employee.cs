@@ -16,11 +16,9 @@ namespace HR_Manager_Project.Models
             }
             set
             {
-                if (!string.IsNullOrWhiteSpace(value))
+                if (string.IsNullOrWhiteSpace(value))
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Ad Soyadi Duzgun Daxil Edin!");
-                    Console.ResetColor();
+                    return;
                 }
                 _fullname = value;
             }
@@ -36,9 +34,7 @@ namespace HR_Manager_Project.Models
             {
                 if (value.Length < 2)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Iscinin Vezifesi Minimum 2 Herfden Ibaret Olmalidir!");
-                    Console.ResetColor();
+                    return;
                 }
                 _position = value;
             }
@@ -54,9 +50,7 @@ namespace HR_Manager_Project.Models
             {
                 if (value < 250)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Iscinin Maasi 250 Manatdan Asaqi Ola Bilmez!");
-                    Console.ResetColor();
+                    return;
                 }
                 _salary = value;
             }

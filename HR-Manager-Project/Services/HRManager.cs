@@ -21,6 +21,7 @@ namespace HR_Manager_Project.Services
             Department department = new Department(name, workerlimit, salarylimit);
             Array.Resize(ref _departments, _departments.Length + 1);
             _departments[_departments.Length - 1] = department;
+            
 
         }
 
@@ -54,21 +55,54 @@ namespace HR_Manager_Project.Services
             department.Name = newname;
         }
 
-        public void EditEmployee(string no, string fullname, string salary, string position)
+        public void EditEmployee(string employeeNo, string fullname, string position, double salary)
         {
-          
+            foreach (Department department in _departments)
+            {
+                foreach (Employee employee in department.Employees)
+                {
+                    if (employee != null)
+                    {
+                        if ((employee.No.ToLower() == employeeNo.ToLower()) && (employee.FullName.ToLower() == fullname.ToLower()))
+                        {
+                            if (position != null)
+                            {
+                                employee.Position = position;
+                            }
 
-
+                            if (salary != 0 && salary >= 250)
+                            {
+                                employee.Salary = salary;
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
         }
-
-        public Department[] GetDepartment(Department[] departments)
+        public Department[] GetDepartment()
         {
-            return departments;
+            if (_departments.Length <= 0)
+            {
+                return null;
+            }
+            return _departments;
         }
 
         public void RemoveEmployee(string no, string departmentname)
         {
-            
+            foreach (Department item in _departments)
+            {
+                for (int i = 0; i < item.Employees.Length; i++)
+                {
+                    if (item.Employees[i].No == no)
+                    {
+                        item.Employees = null;
+                        return;
+                    }
+                }
+
+            }
         }
     }
 }

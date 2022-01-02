@@ -16,9 +16,7 @@ namespace HR_Manager_Project.Models
             {
                 if (value.Length < 2)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Departament Adi Minimum 2 Herfden Ibaret Olunmaldir!");
-                    Console.ResetColor();
+                    return;
                 }
                 _name = value;
             }
@@ -34,9 +32,7 @@ namespace HR_Manager_Project.Models
             {
                 if (value < 1)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Departamentin Isci Limiti Minimum 1 Olmalidir!");
-                    Console.ResetColor();
+                    return;
                 }
                 _workerlimit = value;
             }
@@ -52,9 +48,7 @@ namespace HR_Manager_Project.Models
             {
                 if (value < 250)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Departamentin Maas Limiti 250 Manatdan Asagi Ola Bilmez!");
-                    Console.ResetColor();
+                    return;
                 }
                 _salarylimit = value;
             }
@@ -62,13 +56,6 @@ namespace HR_Manager_Project.Models
         private double _salarylimit;
         public Employee[] Employees = { };
 
-        public Department(string name, int workerlimit, double salarylimit)
-        {
-            Employees =new Employee[0];
-            Name = name;
-            WorkerLimit = workerlimit;
-            SalaryLimit = salarylimit;
-        }
         public double CalcSalaryAverage(Department department)
         {
             double totalsalary = 0;
@@ -80,11 +67,49 @@ namespace HR_Manager_Project.Models
             }
             return totalsalary / counter;
         }
+
+        public int WorkerCounter()
+        {
+            int total = 0;
+
+            foreach (Employee item in Employees)
+            {
+                if (item != null)
+                {
+                    total++;
+                }
+            }
+
+            return total;
+        }
+
+        public double SalaryCounter()
+        {
+            double salaryNow = 0;
+
+            foreach (Employee item in Employees)
+            {
+                if (item != null)
+                {
+                    salaryNow += item.Salary;
+                }
+            }
+
+            return salaryNow;
+        }
+
+        public Department(string name, int workerlimit, double salarylimit)
+        {
+            Employees =new Employee[0];
+            Name = name;
+            WorkerLimit = workerlimit;
+            SalaryLimit = salarylimit;
+        }
         public override string ToString()
         {
 
             Console.WriteLine("--------------------------");    
-            return $"\nDepartament di:{Name}\nIsci Limiti:{WorkerLimit}\nMaksimum Maas Limiti:{SalaryLimit}\n";
+            return $"\nDepartament Adi:{Name}\nIsci Limiti:{WorkerLimit}\nMaksimum Maas Limiti:{SalaryLimit}\n";
 
         }
     }

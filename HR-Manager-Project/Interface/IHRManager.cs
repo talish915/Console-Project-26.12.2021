@@ -10,10 +10,10 @@ namespace HR_Manager_Project.Interface
         public Department[] Departments { get; }
 
         void AddDepartment(string name, int workerlimit, double salarylimit);
-        Department[] GetDepartment(Department[] departments);
+        Department[] GetDepartment();
         void EditDepartment(string name, string newname);
         void AddEmployee(string fullname, string position, double salary, string departmentname);
         void RemoveEmployee(string no, string departmentname);
-        void EditEmployee(string no, string fullname, string salary, string position);
+        void EditEmployee(string employeeNo, string fullname, string position, double salary);
     }
 }
